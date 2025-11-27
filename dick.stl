@@ -1,0 +1,58 @@
+solid refined_phallus
+  facet normal 0 0 -1
+    outer loop
+      vertex 0 0 0
+      vertex 1 0 0
+      vertex 1 1 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 0 0 0
+      vertex 1 1 0
+      vertex 0 1 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 0.5 0.5 5
+      vertex 0.6 0.4 5.2
+      vertex 0.4 0.4 5.2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 0.5 0.5 5
+      vertex 0.4 0.6 5.2
+      vertex 0.6 0.6 5.2
+    endloop
+  endfacet
+  facet normal 0.707 0.707 0
+    outer loop
+      vertex 1 0 0
+      vertex 0.6 0.4 5.2
+      vertex 0.5 0.5 5
+    endloop
+  endfacet
+  facet normal 0.707 -0.707 0
+    outer loop
+      vertex 1 1 0
+      vertex 0.6 0.6 5.2
+      vertex 0.5 0.5 5
+    endloop
+  endfacet
+  facet normal -0.707 0.707 0
+    outer loop
+      vertex 0 1 0
+      vertex 0.4 0.6 5.2
+      vertex 0.5 0.5 5
+    endloop
+  endfacet
+  facet normal -0.707 -0.707 0
+    outer loop
+      vertex 0 0 0
+      vertex 0.4 0.4 5.2
+      vertex 0.5 0.5 5
+    endloop
+  endfacet
+endsolid
