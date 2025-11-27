@@ -1,0 +1,141 @@
+solid dick_model
+  # Shaft base (circular approximation)
+  facet normal 0 0 -1
+    outer loop
+      vertex 0.5 0 0
+      vertex 0.433 0.25 0
+      vertex 0.25 0.433 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 0.5 0 0
+      vertex 0.25 0.433 0
+      vertex 0 0.5 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 0.5 0 0
+      vertex 0 0.5 0
+      vertex -0.25 0.433 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 0.5 0 0
+      vertex -0.25 0.433 0
+      vertex -0.433 0.25 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 0.5 0 0
+      vertex -0.433 0.25 0
+      vertex -0.5 0 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 0.5 0 0
+      vertex -0.5 0 0
+      vertex -0.433 -0.25 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 0.5 0 0
+      vertex -0.433 -0.25 0
+      vertex -0.25 -0.433 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 0.5 0 0
+      vertex -0.25 -0.433 0
+      vertex 0 -0.5 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 0.5 0 0
+      vertex 0 -0.5 0
+      vertex 0.25 -0.433 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 0.5 0 0
+      vertex 0.25 -0.433 0
+      vertex 0.433 -0.25 0
+    endloop
+  endfacet
+  
+  # Shaft body (tapering cylinder segments)
+  # This is a very simplified example, a real smooth cylinder would require many more tiny facets
+  # Example connecting first segment
+  facet normal 0.866 0.5 0
+    outer loop
+      vertex 0.5 0 0
+      vertex 0.4 0 3
+      vertex 0.433 0.25 0
+    endloop
+  endfacet
+  facet normal 0.866 0.5 0
+    outer loop
+      vertex 0.433 0.25 0
+      vertex 0.4 0 3
+      vertex 0.346 0.2 3
+    endloop
+  endfacet
+  # ... (Many more facets for smoother shaft, omitted for brevity but conceptually generated)
+
+  # Glans (more complex dome with distinct rim)
+  # Rim base (slightly wider than shaft)
+  facet normal 0 0 1
+    outer loop
+      vertex 0.55 0 4
+      vertex 0.476 0.275 4
+      vertex 0.275 0.476 4
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 0.55 0 4
+      vertex 0.275 0.476 4
+      vertex 0 0.55 4
+    endloop
+  endfacet
+  # ... (More facets for the rim)
+
+  # Glans tip
+  facet normal 0 0 1
+    outer loop
+      vertex 0 0 5
+      vertex 0.4 0 4.2
+      vertex 0 0.4 4.2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 0 0 5
+      vertex 0 0.4 4.2
+      vertex -0.4 0 4.2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 0 0 5
+      vertex -0.4 0 4.2
+      vertex 0 -0.4 4.2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 0 0 5
+      vertex 0 -0.4 4.2
+      vertex 0.4 0 4.2
+    endloop
+  endfacet
+
+endsolid
